@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Book a Course</title>
     <style>
         ul {
             list-style: none;
         }
-        
+
         li {
             margin: 5px 0;
         }
-        
+
         label {
             display: inline-block;
             width: 100px;
@@ -18,13 +19,75 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <img src="images/logo.png" alt="QA Corporate Logo">
-        <h1 style="background-image:url(images/trainer.jpg); padding: 4em 1em; color: white; background-size: cover">Course Registration</h1> 
+        <h1 style="background-image:url(images/trainer.jpg); padding: 4em 1em; color: white; background-size: cover">
+            Course Registration</h1>
     </header>
-    
+
     <!-- insert form here -->
-    
+    <section>
+        <form>
+            <fieldset>
+                <legend>
+                    <h1>Your Details</h1>
+                </legend>
+                <ul>
+                    <li>
+                        <label for="">First name</label>
+                        <input type="text" placeholder="Type First name here" autofocus>
+                    </li>
+                    <li>
+                        <label for="">Surname</label>
+                        <input type="text" placeholder="Type surname here">
+                    </li>
+                    <li>
+                        <label for="">Position/Role</label>
+                        <input type="text" placeholder="Type Role/Position here">
+                    </li>
+                    <li>
+                        <label for="">Email</label>
+                        <input type="email" name="email" id="email" placeholder="you@domain.com" required>
+                    </li>
+                    <li>
+                        <label for="">Phone Number</label>
+                        <input type="text" name="Phone" id="Phone" placeholder="+447500000000" required>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h1>Course Details</h1>
+                </legend>
+                <ul>
+                    <li>
+                        <label for="">Course</label>
+                        <select>
+                            <option>Programming with JavaScript</option>
+                            <option>Developing Web Applications using HTML5</option>
+                            <option>Developing Responsive Websites</option>
+                            <option>Leveraging the Power of jQuery</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="">Number of Delegates</label>
+                        <input type="number" min="1" max="30">
+                    </li>
+                    <li>
+                        <label for="">Date</label>
+                        <input type="date" name="date" id="date">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </section>
 </body>
+
 </html>
